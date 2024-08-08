@@ -1,0 +1,228 @@
+.main-comp {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.networks {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.networks.open {
+    max-height: 500px;
+    /* A high enough value to fit the content */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.button-div {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    overflow: hidden;
+    /* Ensure content is hidden when max-height is 0 */
+}
+
+.button-div.open {
+    max-height: 500px;
+    /* Set this to a value that can fit your content */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.button-div.close {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.network-list-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 90%;
+    /* Adjust as needed */
+}
+
+.network-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.network-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border: 0 5px;
+    min-width: 230px;
+}
+
+.network-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.network-item label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Optional: Add a title to the card */
+/* .network-list::before {
+    content: 'Available Networks';
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+  } */
+
+.test-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.test-button:hover {
+    background-color: #3e8e41;
+}
+
+.status {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.status.error {
+    color: #af4c4c;
+}
+
+.speedtest-gauge-comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    align-self: center;
+    justify-self: center;
+}
+
+.gauge-container {
+    display: flex;
+}
+
+.speed-data-container {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.speed-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sd-comp {
+    margin-bottom: 20px;
+}
+
+.sd-c-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sd-c-count {
+    font-size: 16px;
+    color: #666;
+}
+
+.net-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.network-status {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    margin: 15px 15px;
+}
+
+.ng-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.network-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ng-comp {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ng-c-title {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.ng-c-count {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}

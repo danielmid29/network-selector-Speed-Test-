@@ -1,0 +1,19 @@
+appId: com.network-selector
+productName: "Network Selector"
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - "dist/**/*"
+  - "build/**/*"
+  - "node_modules/**/*"
+  - "package.json"
+linux:
+  maintainer: "Network Selector Team <network-selector-support@example.com>"
+  target:
+    - deb
+  category: Utility
+extraMetadata:
+  main: build/main.js
+npmRebuild: true
+buildDependenciesFromSource: true

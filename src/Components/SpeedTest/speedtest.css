@@ -1,0 +1,57 @@
+.speed-test {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gauge {
+    width: 200px;
+}
+
+.speed-meter-gauge {
+    display: inline-block;
+    width: 175px;
+}
+
+.st-title {
+    margin-top: 10px;
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+
+.speed-meter-gauge svg {
+    color: #66bb6a;
+}
+
+.speed-meter-gauge span {
+    color: #1e5320;
+}
+
+.speed-meter-gauge .rcg-gauge {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.speed-meter-gauge .rcg-gauge .rcg-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.speed-meter-gauge .rcg-gauge .rcg-segment {
+    transition: all 0.5s ease-in-out;
+}
+
+.speed-meter-gauge .rcg-gauge .rcg-segment:first-child {
+    background-color: #ccc;
+}
+
+.speed-meter-gauge .rcg-gauge .rcg-segment:nth-child(2) {
+    background-color: #66bb6a;
+}
+
+.speed-meter-gauge .rcg-gauge .rcg-segment:nth-child(3) {
+    background-color: #ff0000;
+}
