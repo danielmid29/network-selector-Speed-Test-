@@ -1,0 +1,38 @@
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: getaddrinfo ENOTFOUND https://speed.cloudflare.com
+Speed test failed: getaddrinfo ENOTFOUND https://speed.cloudflare.com/__up
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: Promise resolver undefined is not a function
+Speed test failed: Cannot read properties of undefined (reading 'write')
+Speed test failed: eData is not defined
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: res is not defined
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Cannot read properties of undefined (reading 'message')
+Cannot read properties of undefined (reading 'message')
+Speed test failed: socket hang up
+Speed test failed: socket hang up
+Speed test failed: options is not defined
+Speed test failed: Cannot read properties of undefined (reading 'toFixed')
+Speed test failed: Cannot read properties of undefined (reading 'toFixed')
+Speed test failed: Command failed: ping -c 1 https://www.google.com
+
+Speed test failed: Command failed: ping -c 1 www.google.com
+
+Speed test failed: Failed to parse latency
+Speed test failed: Failed to parse latency
+Speed test failed: Failed to parse latency
+Speed test failed: 
+Connection error speedtest "Wired connection 3": Speed test failed: socket hang up
+Connection error speedtest "Wired connection 3": Speed test failed: Client network socket disconnected before secure TLS connection was established
